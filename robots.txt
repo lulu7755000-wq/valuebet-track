@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lulu7755000-wq.github.io/valuebet-track/sitemap.xml
