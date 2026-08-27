@@ -14,6 +14,7 @@
 <meta property="og:image" content="https://lulu7755000-wq.github.io/valuebet-track/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Salutttttt2">
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0b1020">
 <script data-goatcounter="https://ggpronos.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsEvent","name":"GG Pronos Track Record","url":"https://lulu7755000-wq.github.io/valuebet-track/","description":"Transparence totale des pronostics"}</script>
@@ -27,7 +28,7 @@ body{font-family:Inter,'Segoe UI',system-ui,sans-serif;background:#0b1020;color:
 h1{font-size:2rem;font-weight:900;letter-spacing:-.02em}
 .sub{color:#93a0c0;margin:6px 0 18px;font-size:.95rem}
 .next-match{background:linear-gradient(135deg,#141d38,#1a2548);border:1px solid #2a3a6b;border-radius:12px;padding:14px 16px;margin-bottom:22px}
-.nm-head{font-weight:800;color:#00d4ff;margin-bottom:8px;font-size:.85rem}
+.nm-head{font-weight:800;color:#00d4ff;margin-bottom:8px;font-size:.85rem} .countdown{margin-top:8px;color:var(--gold);font-weight:800;font-size:.82rem} .nm-live{display:flex;align-items:center;gap:8px;font-weight:800;color:var(--gold)}
 .nm-row{display:flex;justify-content:space-between;gap:10px;font-size:.82rem;padding:6px 0;border-top:1px solid #233055}
 .nm-row b{color:#fff} .nm-row span{color:#93a0c0} .nm-row em{color:#fbbf24;font-style:normal;font-weight:700}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:18px}
@@ -62,7 +63,7 @@ td{padding:10px 12px;border-top:1px solid #233055}
 </style>
 </head>
 <body><div class="wrap">
-<div class="topbar"><div class="logo">GG PRONOS</div><div class="badge">🔒 100% transparent • Maj 27/08 11:06</div></div>
+<div class="topbar"><div class="logo">GG PRONOS</div><div class="badge">🔒 100% transparent • Maj 27/08 11:07</div></div>
 <h1>Track Record ValueBet — GG Pronos</h1>
 <p class="sub">Tous les pronos publiés sur <a href="https://x.com/Salutttttt2" style="color:#00d4ff">@Salutttttt2</a> — <b>aucun pari effacé</b>, cotes et scores vérifiables. Mise : 1u/pari.</p>
 <div class="next-match"><div class="nm-head">⚡ Prochains VALUES — en direct sur X <div class="countdown" id="cd" data-ts="2026-08-26T19:00:00+00:00">⏳ <span id="cd-txt">chargement…</span></div></div><div class='nm-row' data-ts='2026-08-26T19:00:00+00:00'><div><b>AEK Athens vs PFC Levski Sofia</b><span>UEFA Champions League Qualification • 19:00</span></div><em>AEK Athens @ 1.47</em></div><div class='nm-row' data-ts='2026-08-26T19:00:00+00:00'><div><b>Lyon vs Fenerbahce</b><span>UEFA Champions League Qualification • 19:00</span></div><em>Lyon @ 1.9</em></div></div>
@@ -151,7 +152,7 @@ td{padding:10px 12px;border-top:1px solid #233055}
 <details><summary>D’où viennent les cotes ?</summary><p>Comparaison multi-bookmakers, on publie toujours la meilleure cote dispo au moment du scan.</p></details>
 <details><summary>Et si je rate le prono ?</summary><p>Le site se met à jour à chaque pari + recap quotidien sur X. Active les notifs @Salutttttt2.</p></details>
 </div>
-<p class="note">⚠️ Les paris comportent des risques. Page générée le 27/08/2026 à 11:06 — données X et BetScan. Jouez responsable — 18+.</p>
+<p class="note">⚠️ Les paris comportent des risques. Page générée le 27/08/2026 à 11:07 — données X et BetScan. Jouez responsable — 18+.</p>
 <p class="footer"><span data-goatcounter="true"></span> visites • <a href="https://lulu7755000-wq.github.io/valuebet-track/" style="color:#4a5568">GG Pronos</a> • <a href="https://x.com/Salutttttt2" style="color:#4a5568">X</a></p>
 </div>
 <script>
@@ -160,5 +161,6 @@ const data = [0.45, -0.55, -1.55, -2.55, -3.55, -2.37, -1.55, -0.89, 1.31];
 const ctx = document.getElementById('profitChart');
 if(ctx && data.length>1){ new Chart(ctx, {type:'line', data:{labels:labels, datasets:[{label:'Profit cumulé (u)', data:data, borderColor:'#00d4ff', backgroundColor:'rgba(0,212,255,.12)', tension:.3, fill:true, pointRadius:0}]}, options:{responsive:true, plugins:{legend:{display:false}}, scales:{y:{grid:{color:'#233055'}, ticks:{color:'#93a0c0'} }, x:{grid:{display:false}, ticks:{color:'#93a0c0', maxTicksLimit:6} } } })}
 function filterTable(){ const q=document.getElementById('q').value.toLowerCase(); const fl=document.getElementById('fLeague').value; const fr=document.getElementById('fRes').value; document.querySelectorAll('#tbl tr[data-league]').forEach(tr=>{ const okQ=!q||tr.innerText.toLowerCase().includes(q); const okL=!fl||tr.dataset.league===fl; const okR=!fr||tr.dataset.result===fr; tr.style.display=(okQ&&okL&&okR)?'':'none'; })}
+function tick(){const el=document.getElementById('cd-txt');const cd=document.getElementById('cd');if(!el||!cd)return;const ts=cd.dataset.ts;if(!ts)return;const d=new Date(ts)-new Date();if(d<=0){el.textContent='🔴 LIVE';return;}const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);el.textContent=h>0?`${h}h ${m}m ${s}s`:`${m}m ${s}s`;}setInterval(tick,1000);tick();
 </script>
 </body></html>
