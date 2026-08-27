@@ -59,6 +59,7 @@ td{padding:10px 12px;border-top:1px solid #233055}
 .newsletter input{flex:1;min-width:180px;background:#0b1020;border:1px solid #233055;color:#e6ebf7;padding:10px 12px;border-radius:8px}
 .newsletter button{background:#7c5cff;color:#fff;border:0;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer}
 .footer{text-align:center;color:#4a5568;font-size:.7rem;margin-top:22px}
+body[data-theme="light"]{background:#f8fafc;color:#0f172a} body[data-theme="light"] .card, body[data-theme="light"] .chart-box, body[data-theme="light"] table, body[data-theme="light"] .grid2>div, body[data-theme="light"] .faq details, body[data-theme="light"] .newsletter, body[data-theme="light"] .next-match{background:#fff;border-color:#e2e8f0} body[data-theme="light"] th{background:#f1f5f9;color:#64748b} body[data-theme="light"] td{border-color:#e2e8f0} body[data-theme="light"] .topbar{background:rgba(248,250,252,.85);border-color:#e2e8f0}
 @media(max-width:640px){.grid2{grid-template-columns:1fr} table{font-size:.72rem} th,td{padding:6px} .topbar{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
@@ -162,5 +163,6 @@ const ctx = document.getElementById('profitChart');
 if(ctx && data.length>1){ new Chart(ctx, {type:'line', data:{labels:labels, datasets:[{label:'Profit cumulé (u)', data:data, borderColor:'#00d4ff', backgroundColor:'rgba(0,212,255,.12)', tension:.3, fill:true, pointRadius:0}]}, options:{responsive:true, plugins:{legend:{display:false}}, scales:{y:{grid:{color:'#233055'}, ticks:{color:'#93a0c0'} }, x:{grid:{display:false}, ticks:{color:'#93a0c0', maxTicksLimit:6} } } })}
 function filterTable(){ const q=document.getElementById('q').value.toLowerCase(); const fl=document.getElementById('fLeague').value; const fr=document.getElementById('fRes').value; document.querySelectorAll('#tbl tr[data-league]').forEach(tr=>{ const okQ=!q||tr.innerText.toLowerCase().includes(q); const okL=!fl||tr.dataset.league===fl; const okR=!fr||tr.dataset.result===fr; tr.style.display=(okQ&&okL&&okR)?'':'none'; })}
 function tick(){const el=document.getElementById('cd-txt');const cd=document.getElementById('cd');if(!el||!cd)return;const ts=cd.dataset.ts;if(!ts)return;const d=new Date(ts)-new Date();if(d<=0){el.textContent='🔴 LIVE';return;}const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);el.textContent=h>0?`${h}h ${m}m ${s}s`:`${m}m ${s}s`;}setInterval(tick,1000);tick();
+function toggleTheme(){const b=document.body;const cur=b.getAttribute('data-theme');const nxt=cur==='light'?'dark':'light';b.setAttribute('data-theme',nxt);localStorage.setItem('ggpronos-theme',nxt);}try{const s=localStorage.getItem('ggpronos-theme');if(s)document.body.setAttribute('data-theme',s);}catch(e){}
 </script>
 </body></html>
