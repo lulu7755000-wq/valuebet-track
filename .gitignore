@@ -1,0 +1,16 @@
+# Secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Logs
+*.log
+
+# Misc
+.DS_Store
+Thumbs.db
