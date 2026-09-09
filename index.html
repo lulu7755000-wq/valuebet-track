@@ -1,273 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>GG Pronos - Pronostics Football Gratuits & Fiables</title>
-    <meta name="description" content="Pronostics football gratuits avec analyse statistique avancée. BetScan Pro détecte les value bets pour maximiser vos gains.">
-    <link rel="stylesheet" href="style.css?v=20260901">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script data-goatcounter="https://ggpronos.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GG Pronos — Track Record 100% Transparent | ValueBet Bot</title>
+<meta name="description" content="Track record 100% transparent de GG Pronos : 20 paris résolus, 45% réussite, ROI -9.3%. Tous les pronos X @Salutttttt2 vérifiables, aucun pari effacé.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://lulu7755000-wq.github.io/valuebet-track/">
+<meta property="og:title" content="GG Pronos — -1.87u de profit | ROI -9.3% transparent">
+<meta property="og:description" content="Suivi en temps réel des VALUES du bot : 20 paris, 45% gagnés. Prochain VALUE dès 13h.">
+<meta property="og:url" content="https://lulu7755000-wq.github.io/valuebet-track/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://lulu7755000-wq.github.io/valuebet-track/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Salutttttt2">
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0b1020">
+<script data-goatcounter="https://ggpronos.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsEvent","name":"GG Pronos Track Record","url":"https://lulu7755000-wq.github.io/valuebet-track/","description":"Transparence totale des pronostics"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,'Segoe UI',system-ui,sans-serif;background:#0b1020;color:#e6ebf7;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;flex-wrap:wrap;gap:12px}
+.logo{font-size:1.6rem;font-weight:900;letter-spacing:.04em;background:linear-gradient(90deg,#7c5cff,#00d4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{background:#141d38;border:1px solid #233055;color:#93a0c0;padding:6px 12px;border-radius:20px;font-size:.72rem}
+h1{font-size:2rem;font-weight:900;letter-spacing:-.02em}
+.sub{color:#93a0c0;margin:6px 0 18px;font-size:.95rem}
+.next-match{background:linear-gradient(135deg,#141d38,#1a2548);border:1px solid #2a3a6b;border-radius:12px;padding:14px 16px;margin-bottom:22px}
+.nm-head{font-weight:800;color:#00d4ff;margin-bottom:8px;font-size:.85rem} .countdown{margin-top:8px;color:var(--gold);font-weight:800;font-size:.82rem} .nm-live{display:flex;align-items:center;gap:8px;font-weight:800;color:var(--gold)}
+.nm-row{display:flex;justify-content:space-between;gap:10px;font-size:.82rem;padding:6px 0;border-top:1px solid #233055}
+.nm-row b{color:#fff} .nm-row span{color:#93a0c0} .nm-row em{color:#fbbf24;font-style:normal;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:18px}
+.card{background:linear-gradient(180deg, rgba(20,29,56,.95), rgba(15,23,42,.9));border:1px solid #233055;border-radius:16px;padding:16px;text-align:center;transition:transform .15s, border-color .15s, box-shadow .15s} .card:hover{transform:translateY(-2px);border-color:rgba(251,191,36,.45);box-shadow:0 8px 24px rgba(251,191,36,.12)}
+.card .v{font-size:1.55rem;font-weight:800} .card .l{font-size:.72rem;color:#93a0c0;text-transform:uppercase;letter-spacing:.05em}
+.pos{color:#22c55e} .neg{color:#ef4444}
+.streak{text-align:center;margin-bottom:18px;color:#fbbf24;font-weight:700}
+.chart-box{background:#141d38;border:1px solid #233055;border-radius:12px;padding:16px;margin-bottom:22px}
+.chart-box h3{font-size:.9rem;color:#93a0c0;margin-bottom:10px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.filters input, .filters select{background:#0b1020;border:1px solid #233055;color:#e6ebf7;padding:8px 10px;border-radius:8px;font-size:.82rem}
+table{width:100%;border-collapse:collapse;background:#141d38;border-radius:12px;overflow:hidden;font-size:.85rem}
+th{background:#1a2548;padding:10px 12px;text-align:left;font-size:.7rem;text-transform:uppercase;color:#93a0c0;cursor:pointer}
+td{padding:10px 12px;border-top:1px solid #233055}
+.p{padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:700}
+.won{background:rgba(34,197,94,.15);color:#22c55e} .lost{background:rgba(239,68,68,.15);color:#ef4444} .pending{background:rgba(147,160,192,.15);color:#93a0c0}
+.note{color:#93a0c0;font-size:.78rem;margin-top:18px}
+.aff-box{margin-top:28px;background:linear-gradient(135deg,#1a1a2e,#16213e);border:2px solid #f59e0b;border-radius:14px;padding:22px;text-align:center}
+.aff-box h3{font-size:1.15rem;margin-bottom:6px;color:#fbbf24}
+.aff-box p{color:#93a0c0;font-size:.85rem}
+.aff-btn{display:inline-block;margin:8px 6px 0;background:linear-gradient(135deg,#f90,#f50);color:#fff;font-weight:700;padding:11px 20px;border-radius:8px;text-decoration:none;font-size:.9rem;transition:transform .12s} .aff-btn:hover{transform:translateY(-1px)}
+.aff-note{font-size:.7rem!important;margin-top:10px!important}
+.cta{display:inline-block;margin-top:16px;background:linear-gradient(135deg,#7c5cff,#00d4ff);color:#fff;font-weight:700;padding:12px 26px;border-radius:8px;text-decoration:none}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0} .grid2 > div{background:#141d38;border:1px solid #233055;border-radius:12px;padding:16px}
+.grid2 h3{font-size:.9rem;color:#00d4ff;margin-bottom:8px} .grid2 p, .grid2 li{font-size:.82rem;color:#cbd5e1} .grid2 ul{padding-left:18px}
+.faq{margin-top:22px} .faq details{background:#141d38;border:1px solid #233055;border-radius:10px;padding:12px 14px;margin-bottom:10px} .faq summary{cursor:pointer;font-weight:700;color:#e6ebf7} .faq p{color:#93a0c0;font-size:.82rem;margin-top:8px}
+.newsletter{margin-top:22px;background:#141d38;border:1px solid #233055;border-radius:12px;padding:18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.newsletter input{flex:1;min-width:180px;background:#0b1020;border:1px solid #233055;color:#e6ebf7;padding:10px 12px;border-radius:8px}
+.newsletter button{background:#7c5cff;color:#fff;border:0;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer}
+.footer{text-align:center;color:#4a5568;font-size:.7rem;margin-top:22px}
+body[data-theme="light"]{background:#f8fafc;color:#0f172a} body[data-theme="light"] .card, body[data-theme="light"] .chart-box, body[data-theme="light"] table, body[data-theme="light"] .grid2>div, body[data-theme="light"] .faq details, body[data-theme="light"] .newsletter, body[data-theme="light"] .next-match{background:#fff;border-color:#e2e8f0} body[data-theme="light"] th{background:#f1f5f9;color:#64748b} body[data-theme="light"] td{border-color:#e2e8f0} body[data-theme="light"] .topbar{background:rgba(248,250,252,.85);border-color:#e2e8f0}
+@media(max-width:640px){.grid2{grid-template-columns:1fr} table{font-size:.72rem} th,td{padding:6px} .topbar{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">⚽</span>
-                <span class="logo-text">GG<span class="accent">Pronos</span></span>
-            </a>
-            <nav class="nav">
-                <a href="#pronos" class="nav-link">Pronos du Jour</a>
-                <a href="methode.html" class="nav-link">Méthode</a>
-                <a href="bankroll.html" class="nav-link">Bankroll</a>
-                <a href="#affiliations" class="nav-link">Bookmakers</a>
-            </nav>
-            <div class="header-right">
-                <span class="live-badge"><i class="fas fa-circle"></i> LIVE</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div style="display:inline-block;background:rgba(212,175,55,.15);border:1px solid rgba(212,175,55,.3);color:#d4af37;padding:6px 14px;border-radius:20px;font-size:.8rem;font-weight:700;margin-bottom:18px">🔒 100% Transparent • 18+ • 1u Flat • Aucun pari effacé</div>
-            <h1>Pronostics Football <span class="accent">Rentables</span> — Pas du Feeling</h1>
-            <p class="hero-subtitle">BetScan Pro scanne 8 ligues en <strong>1X2 + Over 2.5 + BTTS</strong>, ne garde que <strong>proba &gt;50% + cote ≥1.40 + edge 4-22%</strong>. Le reste est jeté.</p>
-            
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <div class="stat-value" id="win-rate">—</div>
-                    <div class="stat-label">Taux de Réussite</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="total-bets">0</div>
-                    <div class="stat-label">Paris Analysés</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="profit">0%</div>
-                    <div class="stat-label">Profit</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="edge">—</div>
-                    <div class="stat-label">Edge Moyen</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pronos du Jour -->
-    <section id="pronos" class="section pronos-section">
-        <div class="container">
-            <h2 class="section-title">🎯 Pronos du Jour</h2>
-            <p class="section-subtitle">Analyses mis à jour à 12h00 et 20h00</p>
-            
-            <div class="pronos-grid" id="pronos-container">
-                <!-- Les pronos seront chargés ici via JavaScript -->
-                <div class="loading">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    Chargement des pronos...
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comment ça marche -->
-    <section class="section how-section">
-        <div class="container">
-            <h2 class="section-title">🧠 Comment ça marche ?</h2>
-            
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">📡</div>
-                    <h3>Récupération</h3>
-                    <p>BetScan récupère les cotes de 10+ bookmakers pour chaque match</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">📊</div>
-                    <h3>Analyse</h3>
-                    <p>Notre modèle calcule les xG, la forme, le H2H et l'avantage domicile</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">🎯</div>
-                    <h3>Comparaison</h3>
-                    <p>On compare notre analyse avec les cotes pour trouver la valeur</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">✅</div>
-                    <h3>Sélection</h3>
-                    <p>Seuls les paris avec edge > 3% et EV positive sont retenus</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Statistiques -->
-    <section id="stats" class="section stats-section">
-        <div class="container">
-            <h2 class="section-title">📈 Statistiques</h2>
-            
-            <div class="stats-grid">
-                <div class="stat-detail-card">
-                    <h3>Bilan Global</h3>
-                    <div class="stat-row">
-                        <span>Total paris</span>
-                        <span class="stat-value" id="stats-total">0</span>
-                    </div>
-                    <div class="stat-row">
-                        <span>Gagnés</span>
-                        <span class="stat-value won" id="stats-won">0</span>
-                    </div>
-                    <div class="stat-row">
-                        <span>Perdus</span>
-                        <span class="stat-value lost" id="stats-lost">0</span>
-                    </div>
-                    <div class="stat-row highlight">
-                        <span>Taux réussite</span>
-                        <span class="stat-value" id="stats-winrate">—</span>
-                    </div>
-                </div>
-                
-                <div class="stat-detail-card">
-                    <h3>Performance</h3>
-                    <div class="stat-row">
-                        <span>Profit</span>
-                        <span class="stat-value profit" id="stats-profit">0%</span>
-                    </div>
-                    <div class="stat-row">
-                        <span>ROI</span>
-                        <span class="stat-value" id="stats-roi">—</span>
-                    </div>
-                    <div class="stat-row">
-                        <span>Paris en cours</span>
-                        <span class="stat-value" id="stats-pending">0</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Historique -->
-    <section id="historique" class="section history-section">
-        <div class="container">
-            <h2 class="section-title">🏆 Historique des Pronos</h2>
-            
-            <div class="history-table-container">
-                <table class="history-table" id="history-table">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Match</th>
-                            <th>Pari</th>
-                            <th>Cote</th>
-                            <th>Score</th>
-                            <th>Résultat</th>
-                        </tr>
-                    </thead>
-                    <tbody id="history-body">
-                        <!-- L'historique sera chargé ici -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Affiliations -->
-    <section id="affiliations" class="section affiliations-section">
-        <div class="container">
-            <h2 class="section-title">💰 Nos Partenaires</h2>
-            <p class="section-subtitle">Inscrivez-vous via nos liens pour nous soutenir</p>
-            
-            <div class="affiliations-grid">
-                <a href="https://www.winamax.fr/parrainage/invite.php?code=GG7H9E" target="_blank" class="affiliation-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Winamax_logo.svg/1200px-Winamax_logo.svg.png" alt="Winamax">
-                    <div class="affiliation-info">
-                        <h3>Winamax</h3>
-                        <p>Meilleure app de paris sportifs en France</p>
-                        <span class="bonus">Jusqu'à 100€ de bonus</span>
-                    </div>
-                </a>
-                
-                <a href="https://www.betclic.fr/" target="_blank" class="affiliation-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/5/5c/Betclic_logo_2021.svg/1200px-Betclic_logo_2021.svg.png" alt="Betclic">
-                    <div class="affiliation-info">
-                        <h3>Betclic</h3>
-                        <p>Les meilleures cotes du marché</p>
-                        <span class="bonus">100€ remboursés</span>
-                    </div>
-                </a>
-                
-                <a href="https://www.unibet.fr/" target="_blank" class="affiliation-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a2/Unibet_logo.svg/1200px-Unibet_logo.svg.png" alt="Unibet">
-                    <div class="affiliation-info">
-                        <h3>Unibet</h3>
-                        <p>Le leader européen des paris</p>
-                        <span class="bonus">100€ de bonus</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section cta-section">
-        <div class="container">
-            <h2>Rejoignez notre communauté</h2>
-            <p>Suivez-nous sur les réseaux sociaux pour ne rien manquer</p>
-            
-            <div class="social-links">
-                <a href="https://twitter.com/ggpronos" target="_blank" class="social-btn twitter">
-                    <i class="fab fa-twitter"></i> Twitter
-                </a>
-                <a href="https://t.me/ggpronos" target="_blank" class="social-btn telegram">
-                    <i class="fab fa-telegram"></i> Telegram
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-icon">⚽</span>
-                    <span class="logo-text">GG<span class="accent">Pronos</span></span>
-                    <p>Pronostics football gratuits avec analyse statistique avancée</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Navigation</h4>
-                    <a href="methode.html">Méthode</a>
-                    <a href="bankroll.html">Bankroll</a>
-                    <a href="#pronos">Pronos du Jour</a>
-                    <a href="#historique">Historique</a>
-                    <a href="#affiliations">Bookmakers</a>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Légal</h4>
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                    <a href="#">Jeu responsable</a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>⚠️ Les paris sportifs comportent des risques. Jouez responsablement. Interdit aux moins de 18 ans.</p>
-                <p>© 2026 GG Pronos - Tous droits réservés · <span style="opacity:.7">👁️ <span data-goatcounter="true">…</span> visites</span></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="app.js?v=20260901"></script>
-</body>
-</html>
+<body><div class="wrap">
+<div class="topbar"><div class="logo">GG <span>PRONOS</span></div><div style="display:flex;gap:8px;align-items:center"><button id="themeBtn" onclick="toggleTheme()" style="background:rgba(20,29,56,.9);border:1px solid var(--line);color:var(--muted);padding:6px 10px;border-radius:999px;cursor:pointer;font-size:.7rem">🌓</button><div class="badge">🔒 100% transparent • Maj 09/09 11:45</div></div>
+<h1>Track Record ValueBet — GG Pronos</h1>
+<p class="sub">Tous les pronos publiés sur <a href="https://x.com/Salutttttt2" style="color:#00d4ff">@Salutttttt2</a> — <b>aucun pari effacé</b>, cotes et scores vérifiables. Mise : 1u/pari.</p>
+<div class="next-match"><div class="nm-head">⚡ Prochains VALUES — en direct sur X <div class="countdown" id="cd" data-ts="2026-09-08T19:00:00+00:00">⏳ <span id="cd-txt">chargement…</span></div></div><div class='nm-row' data-ts='2026-09-08T19:00:00+00:00'><div><b>Borussia Dortmund vs Villarreal</b><span>UEFA Champions League • 19:00</span></div><em>Borussia Dortmund @ 1.8</em></div></div>
+<div class="cards">
+<div class="card"><div class="v">20</div><div class="l">Paris résolus</div></div>
+<div class="card"><div class="v">45%</div><div class="l">Réussite</div></div>
+<div class="card"><div class="v neg">-9.3%</div><div class="l">ROI</div></div>
+<div class="card"><div class="v neg">-1.87u</div><div class="l">Profit</div></div>
+</div>
+<div class="streak">—</div>
+<div class="grid2">
+<div><h3>📈 En bref</h3><p>Cote moyenne : <b>1.94</b><br>Meilleure ligue : <b>EPL</b> (4 paris)<br>Dernier mois : <b class="neg">-1.87u</b><br><span style="color:#93a0c0;font-size:.75rem">0 en attente • Maj auto à chaque pari</span></p></div>
+<div><h3>🛡️ Pourquoi nous faire confiance ?</h3><ul><li>Historique complet, horodaté</li><li>ROI calculé en unités réelles</li><li>Aucun pari supprimé (même les perdus)</li><li>Code source du bot auditable</li></ul></div>
+</div>
+<div class="chart-box"><h3>📊 Courbe de profit (30 derniers paris)</h3><canvas id="profitChart" height="110"></canvas></div>
+<div class="filters">
+<input id="q" placeholder="Rechercher équipe, ligue…" oninput="filterTable()">
+<select id="fLeague" onchange="filterTable()"><option value="">Toutes ligues</option><option>Brazil Série A</option><option>Bundesliga 2 - Germany</option><option>EPL</option><option>K League 1</option><option>La Liga - Spain</option><option>Ligue 2 - France</option><option>Primeira Liga - Portugal</option><option>Serie A - Italy</option><option>Serie B - Italy</option><option>Turkey Super League</option><option>UEFA Champions League Qualification</option></select>
+<select id="fRes" onchange="filterTable()"><option value="">Tous résultats</option><option value="won">Gagnés</option><option value="lost">Perdus</option><option value="pending">En attente</option></select>
+</div>
+<table id="tbl"><tr><th>Date</th><th>Ligue</th><th>Match</th><th>Pari</th><th>Score</th><th>Résultat</th><th>P/L</th></tr>
+<tr data-league="Bundesliga 2 - Germany" data-result="lost" data-date="2026-08-30">
+<td>2026-08-30</td><td>Bundesliga 2 - Germany</td>
+<td>FC St. Pauli vs 1. FC Kaiserslautern</td>
+<td><b>Under 2.5</b> @ 2.15</td>
+<td>1-2</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="Brazil Série A" data-result="won" data-date="2026-08-29">
+<td>2026-08-29</td><td>Brazil Série A</td>
+<td>Atletico Mineiro vs Vitoria</td>
+<td><b>Atletico Mineiro</b> @ 1.73</td>
+<td>2-1</td><td><span class="p won">GAGNE</span></td><td class="pos">+0.73u</td></tr><tr data-league="Serie A - Italy" data-result="won" data-date="2026-08-29">
+<td>2026-08-29</td><td>Serie A - Italy</td>
+<td>Juventus vs Parma</td>
+<td><b>Under 2.5</b> @ 2.02</td>
+<td>2-0</td><td><span class="p won">GAGNE</span></td><td class="pos">+1.02u</td></tr><tr data-league="EPL" data-result="lost" data-date="2026-08-29">
+<td>2026-08-29</td><td>EPL</td>
+<td>Liverpool vs Nottingham Forest</td>
+<td><b>Liverpool</b> @ 1.45</td>
+<td>2-2</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="Ligue 2 - France" data-result="won" data-date="2026-08-28">
+<td>2026-08-28</td><td>Ligue 2 - France</td>
+<td>Nancy vs USL Dunkerque</td>
+<td><b>Nancy</b> @ 2.6</td>
+<td>2-0</td><td><span class="p won">GAGNE</span></td><td class="pos">+1.60u</td></tr><tr data-league="Ligue 2 - France" data-result="lost" data-date="2026-08-28">
+<td>2026-08-28</td><td>Ligue 2 - France</td>
+<td>Montpellier vs Boulogne</td>
+<td><b>Montpellier</b> @ 1.71</td>
+<td>0-0</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="Ligue 2 - France" data-result="lost" data-date="2026-08-28">
+<td>2026-08-28</td><td>Ligue 2 - France</td>
+<td>Rodez AF vs Pau FC</td>
+<td><b>Rodez AF</b> @ 1.69</td>
+<td>2-2</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="La Liga - Spain" data-result="lost" data-date="2026-08-27">
+<td>2026-08-27</td><td>La Liga - Spain</td>
+<td>Celta Vigo vs CA Osasuna</td>
+<td><b>Celta Vigo</b> @ 1.98</td>
+<td>1-2</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="UEFA Champions League Qualification" data-result="won" data-date="2026-08-26">
+<td>2026-08-26</td><td>UEFA Champions League Qualification</td>
+<td>AEK Athens vs PFC Levski Sofia</td>
+<td><b>AEK Athens</b> @ 1.47</td>
+<td>4-0</td><td><span class="p won">GAGNE</span></td><td class="pos">+0.47u</td></tr><tr data-league="UEFA Champions League Qualification" data-result="lost" data-date="2026-08-26">
+<td>2026-08-26</td><td>UEFA Champions League Qualification</td>
+<td>Lyon vs Fenerbahce</td>
+<td><b>Lyon</b> @ 1.9</td>
+<td>1-2</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="K League 1" data-result="lost" data-date="2026-08-26">
+<td>2026-08-26</td><td>K League 1</td>
+<td>FC Anyang vs Incheon United</td>
+<td><b>Incheon United</b> @ 2.17</td>
+<td>2-1</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="Brazil Série A" data-result="won" data-date="2026-08-24">
+<td>2026-08-24</td><td>Brazil Série A</td>
+<td>Botafogo vs Atletico Paranaense</td>
+<td><b>Atletico Paranaense</b> @ 3.2</td>
+<td>2-3</td><td><span class="p won">GAGNE</span></td><td class="pos">+2.20u</td></tr><tr data-league="Primeira Liga - Portugal" data-result="won" data-date="2026-08-24">
+<td>2026-08-24</td><td>Primeira Liga - Portugal</td>
+<td>Gil Vicente vs Casa Pia</td>
+<td><b>Gil Vicente</b> @ 1.66</td>
+<td>2-0</td><td><span class="p won">GAGNE</span></td><td class="pos">+0.66u</td></tr><tr data-league="EPL" data-result="won" data-date="2026-08-24">
+<td>2026-08-24</td><td>EPL</td>
+<td>Fulham vs Chelsea</td>
+<td><b>Chelsea</b> @ 1.82</td>
+<td>2-3</td><td><span class="p won">GAGNE</span></td><td class="pos">+0.82u</td></tr><tr data-league="Turkey Super League" data-result="won" data-date="2026-08-24">
+<td>2026-08-24</td><td>Turkey Super League</td>
+<td>Kocaelispor vs Amed SK</td>
+<td><b>Kocaelispor</b> @ 2.18</td>
+<td>2-0</td><td><span class="p won">GAGNE</span></td><td class="pos">+1.18u</td></tr><tr data-league="La Liga - Spain" data-result="lost" data-date="2026-08-24">
+<td>2026-08-24</td><td>La Liga - Spain</td>
+<td>CA Osasuna vs Levante</td>
+<td><b>CA Osasuna</b> @ 1.88</td>
+<td>0-0</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="Serie A - Italy" data-result="lost" data-date="2026-08-24">
+<td>2026-08-24</td><td>Serie A - Italy</td>
+<td>Bologna vs Lazio</td>
+<td><b>Bologna</b> @ 2.27</td>
+<td>0-1</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="Serie B - Italy" data-result="lost" data-date="2026-08-23">
+<td>2026-08-23</td><td>Serie B - Italy</td>
+<td>Hellas Verona vs Ascoli</td>
+<td><b>Hellas Verona</b> @ 1.65</td>
+<td>1-2</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="EPL" data-result="lost" data-date="2026-08-23">
+<td>2026-08-23</td><td>EPL</td>
+<td>Newcastle United vs Liverpool</td>
+<td><b>Liverpool</b> @ 1.9</td>
+<td>2-2</td><td><span class="p lost">PERDU</span></td><td class="neg">-1.00u</td></tr><tr data-league="EPL" data-result="won" data-date="2026-08-23">
+<td>2026-08-23</td><td>EPL</td>
+<td>Manchester City vs Bournemouth</td>
+<td><b>Manchester City</b> @ 1.45</td>
+<td>2-1</td><td><span class="p won">GAGNE</span></td><td class="pos">+0.45u</td></tr>
+</table>
+<div class="grid2" style="margin-top:18px">
+<div><h3>📅 Par mois</h3><table style="background:transparent"><tr><th>Mois</th><th>Paris</th><th>G/P</th><th>Profit</th></tr><tr><td>2026-08</td><td>20</td><td>9/20</td><td class='neg'>-1.87u</td></tr></table></div>
+<div><h3>🔥 Méthodo ValueBet</h3><p>On compare chaque cote à la moyenne du marché : <code>value = cote/moyenne -1</code>. Si value≥5% + modèle Poisson indépendant, on publie. Pas de heros, juste l’edge mathématique.</p><p style="margin-top:8px"><a href="https://x.com/Salutttttt2" style="color:#00d4ff">Voir les pronos en direct →</a></p></div>
+</div>
+<a class="cta" href="https://x.com/Salutttttt2">Suivre les VALUES en direct sur X → @Salutttttt2</a>
+<div class="aff-box"><h3>💰 Ton bonus de bienvenue t'attend</h3><p>3 bookmakers testés, même cote pour toi, ça soutient le projet. Choisis ton bonus :</p><a class="aff-btn" href="https://www.winamax.fr/parrain?code=GG7H9E" target="_blank" rel="nofollow sponsored">Winamax →</a><a class="aff-btn" href="https://www.betclic.fr" target="_blank" rel="nofollow sponsored">Betclic — code GG779WWP →</a><a class="aff-btn" href="https://www.unibet.fr/inscription/?campaign=210726&amp;parrain=3ECA1707DD732C7B" target="_blank" rel="nofollow sponsored">Unibet →</a><p class="aff-note">18+ | Jouez responsable. Bonus soumis à conditions. Ne misez que ce que vous pouvez perdre.</p></div>
+<div class="newsletter">
+<div><b>📲 Ne rate plus un VALUE</b><br><span style="color:#93a0c0;font-size:.82rem">Rejoins le Telegram gratuit, alerte dès qu’un prono tombe.</span></div>
+<a href="https://t.me/salutttttt2" target="_blank" style="margin-left:auto;background:#229ED9;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700">Telegram →</a>
+</div>
+<div class="faq">
+<h3 style="margin-bottom:10px">❓ FAQ</h3>
+<details><summary>Vous effacez les perdus ?</summary><p>Jamais. Tout est ici, horodaté, même les séries négatives. C’est la preuve la plus dure à fournir — on la fournit.</p></details>
+<details><summary>Quelle mise jouer ?</summary><p>1 unité fixe (ex: 10€). Pas de martingale. Le ROI est calculé ainsi.</p></details>
+<details><summary>D’où viennent les cotes ?</summary><p>Comparaison multi-bookmakers, on publie toujours la meilleure cote dispo au moment du scan.</p></details>
+<details><summary>Et si je rate le prono ?</summary><p>Le site se met à jour à chaque pari + recap quotidien sur X. Active les notifs @Salutttttt2.</p></details>
+</div>
+<p class="note">⚠️ Les paris comportent des risques. Page générée le 09/09/2026 à 11:45 — données X et BetScan. Jouez responsable — 18+.</p>
+<p class="footer"><span data-goatcounter="true"></span> visites • <a href="https://lulu7755000-wq.github.io/valuebet-track/" style="color:#4a5568">GG Pronos</a> • <a href="https://x.com/Salutttttt2" style="color:#4a5568">X</a></p>
+</div>
+<script>
+const labels = ["2026-08-23", "2026-08-23", "2026-08-23", "2026-08-24", "2026-08-24", "2026-08-24", "2026-08-24", "2026-08-24", "2026-08-24", "2026-08-26", "2026-08-26", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-28", "2026-08-28", "2026-08-29", "2026-08-29", "2026-08-29", "2026-08-30"];
+const data = [0.45, -0.55, -1.55, -2.55, -3.55, -2.37, -1.55, -0.89, 1.31, 0.31, 0.78, -0.22, -1.22, 0.38, -0.62, -1.62, -2.62, -1.6, -0.87, -1.87];
+const ctx = document.getElementById('profitChart');
+if(ctx && data.length>1){ new Chart(ctx, {type:'line', data:{labels:labels, datasets:[{label:'Profit cumulé (u)', data:data, borderColor:'#00d4ff', backgroundColor:'rgba(0,212,255,.12)', tension:.3, fill:true, pointRadius:0}]}, options:{responsive:true, plugins:{legend:{display:false}}, scales:{y:{grid:{color:'#233055'}, ticks:{color:'#93a0c0'} }, x:{grid:{display:false}, ticks:{color:'#93a0c0', maxTicksLimit:6} } } })}
+function filterTable(){ const q=document.getElementById('q').value.toLowerCase(); const fl=document.getElementById('fLeague').value; const fr=document.getElementById('fRes').value; document.querySelectorAll('#tbl tr[data-league]').forEach(tr=>{ const okQ=!q||tr.innerText.toLowerCase().includes(q); const okL=!fl||tr.dataset.league===fl; const okR=!fr||tr.dataset.result===fr; tr.style.display=(okQ&&okL&&okR)?'':'none'; })}
+function tick(){const el=document.getElementById('cd-txt');const cd=document.getElementById('cd');if(!el||!cd)return;const ts=cd.dataset.ts;if(!ts)return;const d=new Date(ts)-new Date();if(d<=0){el.textContent='🔴 LIVE';return;}const h=Math.floor(d/36e5),m=Math.floor(d%36e5/6e4),s=Math.floor(d%6e4/1e3);el.textContent=h>0?`${h}h ${m}m ${s}s`:`${m}m ${s}s`;}setInterval(tick,1000);tick();
+function toggleTheme(){const b=document.body;const cur=b.getAttribute('data-theme');const nxt=cur==='light'?'dark':'light';b.setAttribute('data-theme',nxt);localStorage.setItem('ggpronos-theme',nxt);}try{const s=localStorage.getItem('ggpronos-theme');if(s)document.body.setAttribute('data-theme',s);}catch(e){}
+</script>
+</body></html>
